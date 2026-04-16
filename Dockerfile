@@ -6,6 +6,6 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 # Port exposé (Azure injecte PORT mais on met 3000 par défaut)
-EXPOSE 3000
+EXPOSE 8080
 # Commande de lancement
 CMD ["npm", "start"]
